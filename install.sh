@@ -28,12 +28,13 @@ tput setaf 1; echo -e "Fail to copy liblpsolve55.so to /usr/lib64"; tput sgr0
 # echo "success_flag = $success_flag"
 
 # if [$success_flag -eq (2)]
-if [ $success_flag -eq $success_flag ]
+if [ $success_flag -eq 2 ]
 then
 	tput setaf 2; echo -e "------ ------ ------"; tput sgr0
 	tput setaf 2; echo -e "------ Finish ------"; tput sgr0
 	tput setaf 2; echo -e "------ ------ ------"; tput sgr0
 	tput setaf 3; echo -e "Now open MATLAB to proceed with the installation"; tput sgr0
+	echo -e "You may need to run Matlab with sudo: 'sudo matlab'"; tput sgr0
 
 	echo ""
 	echo -e "On the Command Window type:";
