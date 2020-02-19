@@ -14,7 +14,7 @@ Enter the folder:
 
 Run:
 
-``sudo ./install``
+``sudo ./install.sh``
 
 If the installation is successful, open MATLAB to proceed with the installation
 
