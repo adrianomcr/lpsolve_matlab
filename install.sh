@@ -37,13 +37,13 @@ then
 	echo -e "You may need to run Matlab with sudo: 'sudo matlab'"; tput sgr0
 
 	echo ""
-	echo -e "On the Command Window type:";
-	echo -e "cd $BASEDIR/lp_solve_5.5/extra/MATLAB/lpsolve/";
-	echo -e "Makefile";
+	echo -e "On the Command Window type:"
+	tput setaf 6; echo -e "cd $BASEDIR/lp_solve_5.5/extra/MATLAB/lpsolve/"; tput sgr0
+	tput setaf 6; echo -e "Makefile"; tput sgr0
 	echo ""
-	echo -e "After that type the following on the Command line:";
-	echo -e "addpath('$BASEDIR/lp_solve_5.5/extra/MATLAB/lpsolve')"
-	echo -e "savepath"
+	echo -e "After that type the following on the Command line:"
+	tput setaf 6; echo -e "addpath('$BASEDIR/lp_solve_5.5/extra/MATLAB/lpsolve')"; tput sgr0
+	tput setaf 6; echo -e "savepath"; tput sgr0
 else
 	tput setaf 1; echo -e "Installation failed"; tput sgr0
 fi
